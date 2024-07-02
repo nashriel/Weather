@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="search-container">
+                <div class="input-wrapper">
+                    <input type="text" id="locationInput" placeholder="Type here..." name="text" class="input">
+                    <button id="searchButton">Search</button>
+                </div>
+            </div>
+            <div class="current-weather">
+                <h2 id="temperature">0°C</h2>
+                <p id="description">-</p>
+                <p id="location">-</p>
+                <p id="time">-</p>
+                <p id="rain">-</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header">
+                <h1>Today's Highlights</h1>
+            </div>
+            <div class="week-forecast">
+                <!-- Weekly forecast cards will be added here -->
+            </div>
+            <div class="highlights">
+                <div class="highlight">
+                    <h3>UV Index</h3>
+                    <p id="uvIndex">0</p>
+                </div>
+                <div class="highlight">
+                    <h3>Wind Status</h3>
+                    <p id="windStatus">0 km/h</p>
+                </div>
+                <div class="highlight">
+                    <h3>Sunrise & Sunset</h3>
+                    <p id="sunTimes">-</p>
+                </div>
+                <div class="highlight">
+                    <h3>Humidity</h3>
+                    <p id="humidity">0%</p>
+                </div>
+                <div class="highlight">
+                    <h3>Visibility</h3>
+                    <p id="visibility">0 km</p>
+                </div>
+                <div class="highlight">
+                    <h3>Air Quality</h3>
+                    <p id="airQuality">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ashriel Nhembo. All rights reserved. | <a href="LICENSE.md">Legal Page</a> or <a href="LICENSE.txt">LICENSE.txt</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
